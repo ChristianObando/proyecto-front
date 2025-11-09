@@ -12,25 +12,198 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Netflix</a>
-      <button title="Menú" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Series</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Películas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Mi lista</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">
+      <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="" loading="lazy" />
+    </a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Peliculas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recién Añadido</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi lista</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto">
+        <input type="search" class="form-control bg-body" placeholder="Type query" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-init data-mdb-ripple-color="dark"
+          style="padding: .45rem 1.5rem .35rem;">
+          Search
+        </button>
+      </form>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">CHILDREN</a>
+        </li>
+        <!-- Navbar dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+            data-mdb-dropdown-init aria-expanded="false">
+            <i class="fas fa-bell"></i>
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu dropdown-menu-end notifications-list p-1" aria-labelledby="navbarDropdown">
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(11).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(5).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-md">
+                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
+                    class="d-block" alt="..." />
+                </div>
+                <div class="col-md">
+                  <p class="h6 mb-0">New</p>
+                  <p class="h6 mb-1">Movie title</p>
+                  <span class="small">Today</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-dropdown-init
+            aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-circle img-fluid"
+              height='25' width='25'>
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu dropdown-menu-end p-1" aria-labelledby="navbarDropdown">
+            <li class="my-2 d-flex align-items-center"><img
+                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-fluid me-1"
+                height='25' width='25'><span> User 1</span></li>
+            <li class="my-2 d-flex align-items-center"><img
+                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" class="rounded-circle img-fluid me-1"
+                height='25' width='25'><span> User 2</span></li>
+            <li class="my-2 d-flex align-items-center"><img
+                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid me-1"
+                height='25' width='25'><span> User 3</span></li>
+            <li><a class="dropdown-item" href="#">Manage Profiles</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Your Account</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
-  </nav>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+
+
+  <!-- Navbar -->
+<!-- 
+   -->
 
   <!-- Carrusel -->
-  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="mainCarousel" class="bd dark-background">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
@@ -91,7 +264,7 @@
     crossorigin="anonymous"
     integrity="sha512-Yy/ya5SdoOAmqe4XrlAG8/VQ3R8dT4FLEPtmg3+xVayK1aefayy2ENyuS3WwHLEHtNc6/PtvcKBzxUZUfCo40A=="></script>
   <script src="https://assets.nflxext.com/web/ffe/wp/ui/akira/akiraClient.adb24797acda20a538b4.js" async="" data-uia="https://assets.nflxext.com/web/ffe/wp/ui/akira/akiraClient.js" crossorigin="anonymous" integrity="sha512-JfaK2mOxivejFUcWEDTnqXjv62SM0/oIcp5bLjA0BanbuxNRXSapzAZ23x4OG3Kk/vjLCkZU+Xee4Favas5tQg=="></script>
-  
+
 </body>
 
 </html>
