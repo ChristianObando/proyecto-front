@@ -5,214 +5,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Netflix</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.min.css" rel="stylesheet" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="bg-black text-white">
 
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">
-      <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="" loading="lazy" />
-    </a>
+  <nav class="navbar navbar-expand-lg relative-top navbar-dark bg-black">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" height="30" alt=""
+          loading="lazy" />
+      </a>
 
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Series</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Peliculas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recién Añadido</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mi lista</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recién Añadido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi lista</a>
+          </li>
+        </ul>
+        <!-- Left links -->
 
-      <!-- Search form -->
-      <form class="d-flex input-group w-auto">
-        <input type="search" class="form-control bg-body" placeholder="Type query" aria-label="Search" />
-        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-init data-mdb-ripple-color="dark"
-          style="padding: .45rem 1.5rem .35rem;">
-          Search
-        </button>
-      </form>
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">CHILDREN</a>
-        </li>
-        <!-- Navbar dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
-            data-mdb-dropdown-init aria-expanded="false">
-            <i class="fas fa-bell"></i>
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu dropdown-menu-end notifications-list p-1" aria-labelledby="navbarDropdown">
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
+        <!-- Search form -->
+        <form class="d-flex input-group w-auto">
+          <input type="search" class="form-control bg-dark-subtle" placeholder="Búsqueda" aria-label="Search" />
+          <button class="btn btn-outline-primary" type="button" data-mdb-ripple-init data-mdb-ripple-color="dark"
+            style="padding: .45rem 1.5rem .35rem;">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Niños</a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+              data-mdb-dropdown-init aria-expanded="false">
+              <i class="fas fa-bell"></i>
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu dropdown-menu-end notifications-list p-1" aria-labelledby="navbarDropdown">
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(11).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(11).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(5).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md">
+                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
+                      class="d-block" alt="..." />
+                  </div>
+                  <div class="col-md">
+                    <p class="h6 mb-0">New</p>
+                    <p class="h6 mb-1">Movie title</p>
+                    <span class="small">Today</span>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
-                </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(5).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
-                </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-md">
-                  <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" height='63' width='auto'
-                    class="d-block" alt="..." />
-                </div>
-                <div class="col-md">
-                  <p class="h6 mb-0">New</p>
-                  <p class="h6 mb-1">Movie title</p>
-                  <span class="small">Today</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-dropdown-init
-            aria-expanded="false">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-circle img-fluid"
-              height='25' width='25'>
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu dropdown-menu-end p-1" aria-labelledby="navbarDropdown">
-            <li class="my-2 d-flex align-items-center"><img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-fluid me-1"
-                height='25' width='25'><span> User 1</span></li>
-            <li class="my-2 d-flex align-items-center"><img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" class="rounded-circle img-fluid me-1"
-                height='25' width='25'><span> User 2</span></li>
-            <li class="my-2 d-flex align-items-center"><img
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid me-1"
-                height='25' width='25'><span> User 3</span></li>
-            <li><a class="dropdown-item" href="#">Manage Profiles</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="#">Your Account</a></li>
-            <li><a class="dropdown-item" href="#">Help</a></li>
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
-          </ul>
-        </li>
-      </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-dropdown-init
+              aria-expanded="false">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-circle img-fluid"
+                height='25' width='25'>
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu dropdown-menu-end p-1" aria-labelledby="navbarDropdown">
+              <li class="my-2 d-flex align-items-center"><img
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-fluid me-1"
+                  height='25' width='25'><span> User 1</span></li>
+              <li class="my-2 d-flex align-items-center"><img
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(6).jpg" class="rounded-circle img-fluid me-1"
+                  height='25' width='25'><span> User 2</span></li>
+              <li class="my-2 d-flex align-items-center"><img
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid me-1"
+                  height='25' width='25'><span> User 3</span></li>
+              <li><a class="dropdown-item" href="#">Manage Profiles</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Your Account</a></li>
+              <li><a class="dropdown-item" href="#">Help</a></li>
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
 
+      </div>
+      <!-- Collapsible wrapper -->
     </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
+    <!-- Container wrapper -->
+  </nav>
 
-
-  <!-- Navbar -->
-<!-- 
-   -->
-
-  <!-- Carrusel -->
-  <div id="mainCarousel" class="bd dark-background">
+  <!-- Carrusel principal -->
+  <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img
-          src="https://m.media-amazon.com/images/S/pv-target-images/5c3e0d6b9ad0460aa7e63bb1e1d56c4b75722a98f467f5aa8d22650c27a71e1b.jpg"
-          class="d-block w-100" alt="Serie destacada">
+        <img src="https://wallpapers.com/images/featured/peaky-blinders-mf0te5aaoy07nn99.jpg" class="d-block w-100"
+          alt="Serie destacada" id="peakyimg">
       </div>
       <div class="carousel-item">
-        <img src="https://img.aullidos.com/imagenes/varios/mortal-kombat-banner-new.jfif" class="d-block w-100"
-          alt="Película popular">
+        <img
+          src="https://m.media-amazon.com/images/S/pv-target-images/92c2c9a3ae36f9b5aa3eb98a74846ac2c7dd56b403ef07cbf8bc2f49cea2b80a.jpg"
+          class="d-block w-100" alt="Película popular">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.lascosasquenoshacenfelices.com/wp-content/uploads/2025/01/juego-del-calamar.png"
+          class="d-block w-100" alt="Película popular">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://m.media-amazon.com/images/S/pv-target-images/92c2c9a3ae36f9b5aa3eb98a74846ac2c7dd56b403ef07cbf8bc2f49cea2b80a.jpg"
+          class="d-block w-100" alt="Película popular">
       </div>
     </div>
     <button title="Previo" class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
@@ -225,19 +239,200 @@
     </button>
   </div>
 
-  <div>
-    <h1>Pruebas</h1>
-    <p>Pruebas</p>
+  <!--Seccion de varios carousel-->
+  <br>
+  <h2>Peliculas de Acción</h2>
+  <br>
+
+  <div class="scroll-container">
+    <div class="card card-scroll text-center bg-dark text-white">
+      <img src="https://i.pinimg.com/736x/f3/f6/16/f3f616da39ed05d2a0ba77be99ed525d.jpg" class="card-img-top"
+        alt="Película 1">
+      <div class="card-body">
+        <h5 class="card-title">Película 1</h5>
+        <p class="card-text">Descripción breve de la película 1.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll text-center">
+      <img src="https://via.placeholder.com/250x150?text=Película+2" class="card-img-top" alt="Película 2">
+      <div class="card-body">
+        <h5 class="card-title">Película 2</h5>
+        <p class="card-text">Descripción breve de la película 2.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <div class="card card-scroll">
+      <img src="https://via.placeholder.com/250x150?text=Película+3" class="card-img-top" alt="Película 3">
+      <div class="card-body">
+        <h5 class="card-title">Película 3</h5>
+        <p class="card-text">Descripción breve de la película 3.</p>
+      </div>
+    </div>
+
+    <!-- Agrega más tarjetas aquí -->
   </div>
 
+  <!--   <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="40000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://www.generacionfriki.es/wp-content/uploads/2019/06/John-Wick-1-Otro-dia-para-matar-Generacion-Friki-PORTADA2.jpg"
+                class="card-img-top" alt="Película 1">
+              <div class="card-body">
+                <h5 class="card-title">Jhon Wick</h5>
+                <p class="card-text">Descripción breve de la película 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200?text=Película+2" class="card-img-top" alt="Película 2">
+              <div class="card-body">
+                <h5 class="card-title">Película 2</h5>
+                <p class="card-text">Descripción breve de la película 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200?text=Película+3" class="card-img-top" alt="Película 3">
+              <div class="card-body">
+                <h5 class="card-title">Película 3</h5>
+                <p class="card-text">Descripción breve de la película 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200?text=Película+4" class="card-img-top" alt="Película 4">
+              <div class="card-body">
+                <h5 class="card-title">Película 4</h5>
+                <p class="card-text">Descripción breve de la película 4.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200?text=Película+5" class="card-img-top" alt="Película 5">
+              <div class="card-body">
+                <h5 class="card-title">Película 5</h5>
+                <p class="card-text">Descripción breve de la película 5.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200?text=Película+6" class="card-img-top" alt="Película 6">
+              <div class="card-body">
+                <h5 class="card-title">Película 6</h5>
+                <p class="card-text">Descripción breve de la película 6.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+ -->
+
+
+  <!--   <div id="carouselAccion" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://es.web.img3.acsta.net/pictures/14/10/01/14/18/135831.jpg" class="d-block w-100 img-fluid"
+          alt="John Wick">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>John Wick</h5>
+          <p>Un asesino retirado regresa para vengarse de quienes le arrebataron todo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Mad+Max" class="d-block w-100 img-fluid" alt="Mad Max">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mad Max: Fury Road</h5>
+          <p>En un mundo post-apocalíptico, Max une fuerzas con Furiosa para escapar de un tirano.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Extraction" class="d-block w-100 img-fluid" alt="Extraction">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Extraction</h5>
+          <p>Un mercenario debe rescatar al hijo de un criminal internacional en Bangladesh.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccion" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAccion" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> -->
 
   <!-- Sección de tarjetas -->
   <div class="container">
     <h2 class="section-title">Tendencias</h2>
-    <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="row row-cols-2 row-cols-md-5 g-5">
       <div class="col">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200?text=Película+1" class="card-img-top" alt="Película 1">
+          <img src="https://i.pinimg.com/736x/f3/f6/16/f3f616da39ed05d2a0ba77be99ed525d.jpg" class="card-img-top"
+            alt="Película 1">
         </div>
       </div>
       <div class="col">
@@ -259,11 +454,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://assets.nflxext.com/web/ffe/wp/ui/landingPages/nmhp/nmhpFrameworkClient.34f9dcb5e30b7a6b4e7f.js"
-    async="" data-uia="https://assets.nflxext.com/web/ffe/wp/ui/landingPages/nmhp/nmhpFrameworkClient.js"
-    crossorigin="anonymous"
-    integrity="sha512-Yy/ya5SdoOAmqe4XrlAG8/VQ3R8dT4FLEPtmg3+xVayK1aefayy2ENyuS3WwHLEHtNc6/PtvcKBzxUZUfCo40A=="></script>
-  <script src="https://assets.nflxext.com/web/ffe/wp/ui/akira/akiraClient.adb24797acda20a538b4.js" async="" data-uia="https://assets.nflxext.com/web/ffe/wp/ui/akira/akiraClient.js" crossorigin="anonymous" integrity="sha512-JfaK2mOxivejFUcWEDTnqXjv62SM0/oIcp5bLjA0BanbuxNRXSapzAZ23x4OG3Kk/vjLCkZU+Xee4Favas5tQg=="></script>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.umd.min.js"></script>
+
 
 </body>
 
