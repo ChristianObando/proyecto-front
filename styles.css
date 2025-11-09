@@ -177,15 +177,29 @@
      color: var(--lightGray);
    }
 
-   @media (min-width: 768px) {
+   @media (max-width: 768px) {
 
-    .card {
-      background-color: #222;
-      border: none;
-      min-height: 270px;
-      min-width: 200px;
-      transition: box-shadow 0.3s ease;
-    }
+     .card {
+       background-color: #222;
+       border: none;
+       min-height: 600px;
+       min-width: 270px;
+       transition: box-shadow 0.3s ease;
+     }
+
+     .scrollable-dropdown {
+       max-height: 400px;
+       /* Altura máxima visible */
+       overflow-y: auto;
+       /* Scroll vertical si se excede */
+     }
+
+     .row >*{
+      width: 100%;
+      max-width: 40%;
+  
+     }
+
 
 
    }
